@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>HTML Crash Course For Beginners</title>
+        <style>
+            h1 {
+                color:blueviolet;
+            }
+        </style>
+
+        <!--外面建立一个css文件，用link导入进来-->
+        <link rel="stylesheet" href="./外面新建CSS/style.css">
+
+    </head>
+    <body>
+        <div class="box1">
+            <!--盒子模型-->
+
+              <!--这是注释-->
+            <h1>Heading One</h1>
+            <h2 style="color:red">Heading TWO</h2>
+            <h3>Heading Three</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit sunt, facere eos eligendi perferendis nemo adipisci. A aliquid provident veniam cumque quas quisquam, odio ducimus quaerat maiores ea, vero saepe.</p>
+            <!--输入Lorem，回车就会生成填充文字-->
+            <!--Lorem后跟数字，可以指定生成的词数-->
+
+            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, deleniti?</P>
+            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, deleniti?</P>
+
+            <script language = "php">
+                phpinfo();
+            </script>
+
+        </div>
+        <div class="container">
+            <div class="box2">
+
+                <h1>Heading One</h1>
+                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, deleniti?</P>
+                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, deleniti?</P>
+                <h2>Heading 2</h2>
+                <P>Lorem ipsum <strong>加粗的</strong> sit amet consectetur, adipisicing elit. Fugiat, deleniti?</P>
+                <P>Lorem ipsum dolor <em>斜体的</em> sit amet consectetur, adipisicing elit. Fugiat, deleniti?</P>
+                <h3>Heading 3</h3>
+
+
+                <h1>ALT + shift可以快速复制本行内容</h1>
+                <h2>Heading TWO</h2>
+                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, deleniti?</P>
+                <P>Lorem ipsum dolor <a href="https://google.com">这是一个超链接，跳转到谷歌</a> sit amet consectetur, adipisicing elit. Fugiat, deleniti?</P>
+                <button>一个没有用的按钮</button>
+            </div> 
+
+            <div class="box3">
+
+                <h1>Heading One</h1>
+                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, deleniti?</P>
+                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, deleniti?</P>
+                <h2>Heading 2</h2>
+
+                <h2>Heading TWO</h2>
+                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, deleniti?</P>
+               
+            </div> 
+        </div>
+
+        <div class="list">
+            <ul>
+                <!-- 无序列表前面默认是点，想改成图案 -->
+                <li>aaa</li>
+                <li>bbb</li>
+                <li>ccc</li>
+            </ul>
+        </div>
+
+        <!--list-->
+        <ol>
+            <li>1111</li>
+            <li>2222</li>
+            <li>3333</li>
+
+        </ol>
+
+
+        <!--Table-->
+        <table>
+            <thead><!--表头-->
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>LLL</td>
+                    <td>Mbbb</td>
+                    <td>999</td>
+                    <td>aaaa@aa.com</td>
+                </tr>
+                <tr>
+                    <td>LLgg</td>
+                    <td>MMM</td>
+                    <td>899</td>
+                    <td>aaaa@aa.com</td>
+                </tr>
+                <tr>
+                    <td>jhLL</td>
+                    <td>Mb</td>
+                    <td>999</td>
+                    <td>aaaa@aa.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><!--加空行-->
+
+        <hr><!--加水平线-->
+        <!--Forms表单-->
+        <form>
+            <div><!--建立一个区块来显示内容-->
+                <lable>First Name</lable>
+                <!--input可由用户输入，输入的信息储存在变量中，提交给网站后端的服务器-->
+                <input type="text" name="firstname" placeholder="Enter First name">
+            </div>
+
+            <div><!--建立一个区块来显示内容-->
+                <lable>Last Name</lable>
+                <!--input可由用户输入，输入的信息储存在变量中，提交给网站后端的服务器-->
+                <input type="text" name="lastname" placeholder="Enter Last name">
+            </div>
+            <div><!--建立一个区块来显示内容-->
+                <lable>Email</lable>
+                <!--input可由用户输入，输入的信息储存在变量中，提交给网站后端的服务器-->
+                <input type="email" name="email" placeholder="Enter Email">
+            </div>
+
+            <!--加一个提交按钮-->
+            <input type="submit" name="submit" value="Submit">
+
+        </form>
+        <hr><!--加水平线-->
+
+        <button>按钮</button>
+
+        <img style="width: 90vw" src="img/晚会舞台.jpg" alt="找不到这个图片时，显示">
+        <!--img的style的width是站浏览器显示的比例，随浏览器页面大小而改变-->
+        <blockquote>这是引用</blockquote>
+
+        <p><abbr title="hhhhhh">MIT</abbr></p> dddd
+        <p><cire>jjjjjjjjjj</cire>by D</p>
+
+
+        <div class="box4">
+            <button>一个没有用的按钮</button>
+            <a href="https://google.com">这是一个超链接，跳转到谷歌</a>
+        </div>
+
+        <div style="margin-top:200px"></div><!--加空白-->
+
+        <!-- 建立三个块，class都名为block1 -->
+        <div class="block1">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iste molestias quis et architecto quisquam ut minima aperiam aspernatur, commodi quo a consequuntur nesciunt autem voluptate error aliquam! Hic, iure.
+            </p>
+        </div>
+
+        <div class="block1">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iste molestias quis et architecto quisquam ut minima aperiam aspernatur, commodi quo a consequuntur nesciunt autem voluptate error aliquam! Hic, iure.
+            </p>
+        </div>
+
+        <div class="block1">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iste molestias quis et architecto quisquam ut minima aperiam aspernatur, commodi quo a consequuntur nesciunt autem voluptate error aliquam! Hic, iure.
+            </p>
+        </div>
+
+        <div id="main-block">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus distinctio voluptatum facilis harum corrupti nulla enim ipsam culpa voluptatem, molestiae assumenda ut earum nihil quasi officia possimus excepturi eaque suscipit!
+        </div>
+
+        <!-- 清除上面的float效果，防止影响到下面 -->
+        <div class="clearfix"></div>
+
+        <div id="sidebar">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus distinctio voluptatum facilis harum corrupti nulla enim ipsam culpa voluptatem, molestiae assumenda ut earum nihil quasi officia possimus excepturi eaque suscipit!
+        </div>
+
+
+        <ul class="list2">
+            <li>llllllllisttttt</li>
+            <li>llllllllisttttt</li>
+            <li>llllllllisttttt</li>
+            <li>llllllllisttttt</li>
+            <li>llllllllisttttt</li>
+            <li>llllllllisttttt</li>
+            <li>llllllllisttttt</li>
+            <li>llllllllisttttt</li>
+            <li>llllllllisttttt</li>
+        </ul>
+
+
+
+
+
+        <div style="margin-top:1000px"></div><!--加空白-->
+    </body>
+</html>
